@@ -11,8 +11,8 @@ import string
 
 
 class MyTemplate(string.Template):
-    delimiter = '%'
-    idpattern = '[a-z]+_[a-z]+'
+    delimiter = '%'         # 使用%替换$作为变量符
+    idpattern = '[a-z]+_[a-z]+'     # 替换模式
 
 
 template_text = '''

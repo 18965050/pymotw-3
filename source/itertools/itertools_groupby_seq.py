@@ -35,6 +35,7 @@ pprint.pprint(data, width=35)
 print()
 
 # Try to group the unsorted data based on X values
+# 未排序分组, 不起作用
 print('Grouped, unsorted:')
 for k, g in groupby(data, operator.attrgetter('x')):
     print(k, list(g))
@@ -47,6 +48,7 @@ pprint.pprint(data, width=35)
 print()
 
 # Group the sorted data based on X values
+# 排序后分组, 起作用了
 print('Grouped, sorted:')
 for k, g in groupby(data, operator.attrgetter('x')):
     print(k, list(g))
