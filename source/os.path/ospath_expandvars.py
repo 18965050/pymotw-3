@@ -8,7 +8,7 @@
 
 #end_pymotw_header
 
-import os.path
+# import os.path
 import os
 
 os.environ['MYVAR'] = 'VALUE'
