@@ -50,5 +50,6 @@ sys.path.insert(0, package_dir_b)
 
 # Reload the module to get the other version
 imp.reload(example)
+
 print('Reloaded example from:', example.__file__)
 print('\t', example.DATA)

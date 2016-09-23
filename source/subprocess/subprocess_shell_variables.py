@@ -9,5 +9,5 @@
 
 import subprocess
 
-completed = subprocess.run('echo $HOME', shell=True)
+completed = subprocess.run('echo %PATH%', shell=True)
 print('returncode:', completed.returncode)

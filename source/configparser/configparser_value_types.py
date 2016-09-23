@@ -29,6 +29,6 @@ for name in parser.options('floats'):
 print('\nBooleans:')
 for name in parser.options('booleans'):
     string_value = parser.get('booleans', name)
-    value = parser.getboolean('booleans', name)
+    value = parser.getboolean('booleans', name)     # 0为False, 非0为True
     print('  {:<12} : {!r:<7} -> {}'.format(
         name, string_value, value))

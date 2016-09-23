@@ -14,7 +14,7 @@ def print_event(name):
 
 now = time.time()
 print('START:', time.ctime(now))
-scheduler.enterabs(now + 2, 2, print_event, ('first',))
-scheduler.enterabs(now + 2, 1, print_event, ('second',))
+scheduler.enterabs(now + 2, 2, print_event, ('first',))     # 优先级为2
+scheduler.enterabs(now + 2, 1, print_event, ('second',))    # 优先级为1,高于优先级2
 
 scheduler.run()
