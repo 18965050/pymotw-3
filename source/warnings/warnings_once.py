@@ -9,7 +9,7 @@
 
 import warnings
 
-warnings.simplefilter('once', UserWarning)
+warnings.simplefilter('always', UserWarning)
 
 warnings.warn('This is a warning!')
 warnings.warn('This is a warning!')
